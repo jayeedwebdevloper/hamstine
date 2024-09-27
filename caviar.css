@@ -1,0 +1,102 @@
+.bd-hero__halfim-img video {
+    width: 100%;  /* Breite auf 100% setzen, damit es den Container ausfüllt */
+    height: fit-content; /* Höhe automatisch anpassen */
+    object-fit: cover; /* Video ohne Verzerrung ausfüllen lassen */
+    height: -webkit-fill-available;
+    
+  }
+
+  .amenities-area {
+    position: relative; /* Setzt die Positionierungskontext für absolute Positionierung des Videos */
+    overflow: hidden; /* Verhindert Überlauf des Inhalts außerhalb der Bereichsgrenzen */
+  }
+  
+  .video-background3 {
+    position: absolute; /* Absolute Positionierung des Videos im Bereich */
+    top: 0; /* Setzt das Video an den oberen Rand */
+    left: 50%; /* Zentriert das Video horizontal */
+    transform: translateX(-50%); /* Korrigiert die horizontale Zentrierung */
+    width: 100vw; /* Breite auf die gesamte Viewport-Breite setzen */
+    object-fit: cover; /* Sorgt dafür, dass das Video den verfügbaren Raum bedeckt ohne zu verzerren */
+  }
+  
+  video {
+    width: 100%; /* Sichert, dass das Video Element die Breite seines Containers einnimmt */
+    height: 100%; /* Sichert, dass das Video Element die Höhe seines Containers einnimmt */
+  }
+
+  .rollendes-bild2 {
+    margin-top: 150px;
+    width: 100px; /* Anpassen nach Bedarf */
+    height: 100px; /* Anpassen nach Bedarf */
+    border-radius: 50%; /* Macht das Bild rund */
+    position: absolute;
+    animation: rollen 7.5s linear forwards; /* Dauer und Verhalten der Animation */
+  }
+  
+  .rollendes-bild2 {
+    width: 300px; /* Anpassen nach Bedarf */
+    height: 300px; /* Anpassen nach Bedarf */
+    border-radius: 50%; /* Macht das Bild rund */
+    position: absolute;
+    animation: rollen 15s infinite linear; /* Animation wiederholt sich unendlich */
+    margin-top: 300px;
+    margin-bottom: 100px;
+  }
+  
+  @keyframes rollen {
+    0%, 100% {
+      left: 0;
+      transform: translateX(0%) scale(1) rotate(0deg); /* Startet ohne Transformation, keine Rotation */
+      opacity: 1;
+    }
+    25% {
+      left: 50%;
+      /* Korrigiert die Position zur Mitte, ohne Skalierung, beginnt zu rotieren */
+      transform: translateX(-50%) scale(1) rotate(360deg);
+    }
+    40% {
+      /* Zoom-In um 30%, Rotation beibehalten */
+      transform: translateX(-10%) scale(1.3) rotate(540deg);
+    }
+    60% {
+      /* Rückkehr zur normalen Größe (Zoom-Out), weitere Rotation */
+      transform: translateX(-50%) scale(1) rotate(720deg);
+    }
+    75% {
+      opacity: 1; /* Bleibt sichtbar */
+    }
+    90% {
+      opacity: 0; /* Beginnt zu verschwinden */
+    }
+  }
+  
+
+  .include-bg img {
+    animation: zoomInOut 5s ease-in-out forwards; /* Fügt die Wiederholungsanzahl hinzu */
+    width: 90%; /* Stellt sicher, dass das Bild nach der Animation die volle Breite des Containers einnimmt */
+    height: auto; /* Behält das ursprüngliche Seitenverhältnis bei */
+
+  }
+  
+  @keyframes zoomInOut {
+    0% {
+      transform: scale(31.2); /* Startet bei 1120% */
+    }
+    50% {
+      transform: scale(11.2); /* Hält den maximalen Zoom bis zur Hälfte der Zeit */
+    }
+    100% {
+      transform: scale(1); /* Geht zurück auf 100% */
+    }
+  }
+  .service-intro-thumb img {
+    /* position: absolute; */
+    bottom: 0;
+    height: 120%;
+    object-fit: cover;
+}
+  
+
+  
+

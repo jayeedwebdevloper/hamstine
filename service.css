@@ -1,0 +1,16 @@
+div.video-container {
+    max-width: 800px; /* Maximale Breite des Videos */
+    margin: auto; /* Zentriert das Video horizontal */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Schatten um das Video für mehr Tiefe */
+    border-radius: 8px; /* Abgerundete Ecken für einen moderneren Look */
+    overflow: hidden; /* Stellt sicher, dass alle inneren Elemente innerhalb der Grenzen bleiben */
+}
+
+/* Video-Element-Styles */
+video {
+    width: 100%; /* Stellt sicher, dass das Video die Breite des Containers ausfüllt */
+    display: block; /* Entfernt zusätzlichen Platz unter dem Video */
+}
+
+
+
